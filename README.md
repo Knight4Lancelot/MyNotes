@@ -1,2 +1,1 @@
-# MyNotes
-笔记
+my notes
