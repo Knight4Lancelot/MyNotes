@@ -12,4 +12,20 @@ int const arr1[] = { 1, 2, 3 };
 const int arr2[] = { 1, 2, 3 }; // 写法与上一行等价
 ```
 
-## （2）const
+## （2）const修饰指针
+
+### 常量指针
+
+```C++
+const int* p = &num;
+```
+
+常量指针<span style="color:red">不可以通过修改所指向的变量的值</span>，但是<span style="color:red">指针可以指向别的变量</span>。
+
+### 指针常量
+
+```C++
+int* const p = &num;
+```
+
+指针常量的<span style="color:red">值不可以修改，即不能指向别的变量</span>，但是<span style="color:red">可以通过指针修改它所指向的变量的值</span>。
