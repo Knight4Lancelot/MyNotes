@@ -103,8 +103,10 @@ public:
             sort(pathList.begin(), pathList.end(), cmp);
         }
         for (int i = 0; i < pathList.size(); i++) {
+            const std::string nodePath =
+                root + pathList[i] + (CheckPathType(root + "\\" + pathList[i]) == FileType::DIR ? "\\" : "");
             std::shared_ptr<Node> ptr = std::make_shared<Node>(
-                new Node(root + "\\" + pathList[i], pathList[i], node->GetLayer() + 1));
+                new Node(nodePath, pathList[i], node->GetLayer() + 1));
             res.insert(std::make_pair(ptr, CheckPathType(root + "\\" + pathList[i])));
         }
         return res;
@@ -122,12 +124,18 @@ public:
 
     void PrintFormatPath(std::shared_ptr<Node> node)
     {
+        FileType type = CheckPathType(node->GetPath());
         for (int i = 0; i < node->GetLayer() - 1; i++) {
             std::cout << "│&emsp;";
         }
-
-        std::cout << "├─ [" << node->GetName() << "]("
-            << node->GetPath() << ")<br>" << std::endl;
+        if (type == FileType::FILE) {
+            std::cout << "├─ [" << node->GetName() << "]("
+                << node->GetPath() << ")<br>" << std::endl;
+        } else if (type == FileType::DIR) {
+            std::cout << "├─ **<span style=\"font-size: " <<
+                26 - 2 * node->GetLayer() << "px\">"
+                << node->GetName() << "</span>**<br>" << std::endl;
+        }
     }
 
     bool IsIgnoreNode(std::string nodeName)
