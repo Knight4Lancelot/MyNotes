@@ -89,7 +89,7 @@ public:
         std::map<std::shared_ptr<Node>, FileType> res;
         std::vector<std::string> pathList;
         if (p != ".." && p != ".") {
-            p.append("\\*");
+            p.append("/*");
         }
         if ((hFile = _findfirst(p.c_str(), &fileinfo)) != -1) {
 		    do {
@@ -104,10 +104,10 @@ public:
         }
         for (int i = 0; i < pathList.size(); i++) {
             const std::string nodePath =
-                root + pathList[i] + (CheckPathType(root + "\\" + pathList[i]) == FileType::DIR ? "\\" : "");
+                root + pathList[i] + (CheckPathType(root + "/" + pathList[i]) == FileType::DIR ? "/" : "");
             std::shared_ptr<Node> ptr = std::make_shared<Node>(
                 new Node(nodePath, pathList[i], node->GetLayer() + 1));
-            res.insert(std::make_pair(ptr, CheckPathType(root + "\\" + pathList[i])));
+            res.insert(std::make_pair(ptr, CheckPathType(root + "/" + pathList[i])));
         }
         return res;
     }
@@ -197,11 +197,11 @@ private:
 int main()
 {
     Reader reader;
-    // std::map<std::shared_ptr<Node>, FileType> res = reader.ReadDir("C:\\Users\\y30058935\\Desktop\\vscodeProsBack");
+    // std::map<std::shared_ptr<Node>, FileType> res = reader.ReadDir("C:/Users/y30058935/Desktop/vscodeProsBack");
     // for (std::pair<std::shared_ptr<Node>, FileType> pair : res) {
     //     std::cout << "Type: " << reader.TranslateFileTypeName(pair.second)
     //         << ", path: " << pair.first->GetPath() << std::endl;
     // }
-    // reader.TraverseFiles("C:\\Users\\y30058935\\Desktop\\MyNote", "MyNote");
-    reader.TraverseFiles(".\\", ".", true);
+    // reader.TraverseFiles("C:/Users/y30058935/Desktop/MyNote", "MyNote");
+    reader.TraverseFiles("./", ".", true);
 }
