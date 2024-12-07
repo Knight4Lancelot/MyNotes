@@ -54,5 +54,5 @@
 │&emsp;├─ [0001、对象检索key-value的方法.md](./8、JavaScript/0001、对象检索key-value的方法.md)<br>
 ├─ **<span style="font-size: 24px">9、其他</span>**<br>
 │&emsp;├─ **<span style="font-size: 22px">科目四</span>**<br>
-│&emsp;│&emsp;├─ [01、重点题目.md](./9、其他/科目四/01、重点题目.md)<br>
+│&emsp;│&emsp;├─ [01、重点题目01.md](./9、其他/科目四/01、重点题目01.md)<br>
 ├─ [createContext.cpp](./createContext.cpp)<br>
