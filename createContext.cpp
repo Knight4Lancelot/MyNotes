@@ -52,7 +52,7 @@ enum class FileType {
 
 bool cmp(std::string path1, std::string path2)
 {
-    return path1 > path2;
+    return path1 < path2;
 }
 
 class Reader {
@@ -80,6 +80,37 @@ public:
         }
     }
 
+    // std::map<std::shared_ptr<Node>, FileType> ReadDir(std::shared_ptr<Node> node, bool isNeedSort)
+    // {
+    //     const std::string root = node->GetPath();
+    //     intptr_t hFile = 0;
+    //     struct _finddata_t fileinfo;
+    //     std::string p(root);
+    //     std::map<std::shared_ptr<Node>, FileType> res;
+    //     std::vector<std::string> pathList;
+    //     if (p != ".." && p != ".") {
+    //         p.append("/*");
+    //     }
+    //     if ((hFile = _findfirst(p.c_str(), &fileinfo)) != -1) {
+	// 	    do {
+    //             if (strcmp(fileinfo.name, ".") != 0 && strcmp(fileinfo.name, "..") != 0) {
+    //                 pathList.push_back(fileinfo.name);
+    //             }
+    //         } while (_findnext(hFile, &fileinfo) == 0);
+    //         _findclose(hFile);
+    //     }
+    //     if (isNeedSort) {
+    //         sort(pathList.begin(), pathList.end(), cmp);
+    //     }
+    //     for (int i = 0; i < pathList.size(); i++) {
+    //         const std::string nodePath =
+    //             root + pathList[i] + (CheckPathType(root + "/" + pathList[i]) == FileType::DIR ? "/" : "");
+    //         std::shared_ptr<Node> ptr = std::make_shared<Node>(
+    //             new Node(nodePath, pathList[i], node->GetLayer() + 1));
+    //         res.insert(std::make_pair(ptr, CheckPathType(root + "/" + pathList[i])));
+    //     }
+    //     return res;
+    // }
     std::map<std::shared_ptr<Node>, FileType> ReadDir(std::shared_ptr<Node> node, bool isNeedSort)
     {
         const std::string root = node->GetPath();
@@ -88,29 +119,33 @@ public:
         std::string p(root);
         std::map<std::shared_ptr<Node>, FileType> res;
         std::vector<std::string> pathList;
-        if (p != ".." && p != ".") {
+        if (p!= ".." && p!= ".") {
             p.append("/*");
         }
-        if ((hFile = _findfirst(p.c_str(), &fileinfo)) != -1) {
-		    do {
-                if (strcmp(fileinfo.name, ".") != 0 && strcmp(fileinfo.name, "..") != 0) {
+        if ((hFile = _findfirst(p.c_str(), &fileinfo))!= -1) {
+            do {
+                if (strcmp(fileinfo.name, ".")!= 0 && strcmp(fileinfo.name, "..")!= 0) {
                     pathList.push_back(fileinfo.name);
                 }
             } while (_findnext(hFile, &fileinfo) == 0);
             _findclose(hFile);
         }
         if (isNeedSort) {
-            sort(pathList.begin(), pathList.end(), cmp);
+            // 使用自定义比较函数进行排序
+            std::sort(pathList.begin(), pathList.end(), [](const std::string& a, const std::string& b) {
+                return a > b;
+            });
         }
         for (int i = 0; i < pathList.size(); i++) {
             const std::string nodePath =
-                root + pathList[i] + (CheckPathType(root + "/" + pathList[i]) == FileType::DIR ? "/" : "");
+                root + pathList[i] + (CheckPathType(root + "/" + pathList[i]) == FileType::DIR? "/" : "");
             std::shared_ptr<Node> ptr = std::make_shared<Node>(
                 new Node(nodePath, pathList[i], node->GetLayer() + 1));
             res.insert(std::make_pair(ptr, CheckPathType(root + "/" + pathList[i])));
         }
         return res;
     }
+
 
     bool IsLeafContent(std::map<std::shared_ptr<Node>, FileType> nodeList)
     {
