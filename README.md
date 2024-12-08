@@ -55,6 +55,7 @@
 ├─ **<span style="font-size: 24px">7、IDE设置</span>**<br>
 │&emsp;├─ **<span style="font-size: 22px">vscode</span>**<br>
 │&emsp;│&emsp;├─ [0001、设置默认打开文件的字符集.md](./7、IDE设置/vscode/0001、设置默认打开文件的字符集.md)<br>
+│&emsp;│&emsp;├─ [0002、设置IDE的页签换行显示.md](./7、IDE设置/vscode/0002、设置IDE的页签换行显示.md)<br>
 ├─ **<span style="font-size: 24px">8、JavaScript</span>**<br>
 │&emsp;├─ [0001、对象检索key-value的方法.md](./8、JavaScript/0001、对象检索key-value的方法.md)<br>
 ├─ **<span style="font-size: 24px">9、其他</span>**<br>
