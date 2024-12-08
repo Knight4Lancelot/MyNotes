@@ -12,6 +12,8 @@
 │&emsp;│&emsp;├─ [0、六大软件设计原则.md](./1、设计模式/2、软件设计六大原则/0、六大软件设计原则.md)<br>
 │&emsp;│&emsp;├─ [1、单一职责原则.md](./1、设计模式/2、软件设计六大原则/1、单一职责原则.md)<br>
 │&emsp;│&emsp;├─ [2、开闭原则.md](./1、设计模式/2、软件设计六大原则/2、开闭原则.md)<br>
+│&emsp;│&emsp;├─ [3、里氏替换原则.md](./1、设计模式/2、软件设计六大原则/3、里氏替换原则.md)<br>
+│&emsp;│&emsp;├─ [4、依赖倒转原则.md](./1、设计模式/2、软件设计六大原则/4、依赖倒转原则.md)<br>
 ├─ **<span style="font-size: 24px">2、通用知识点</span>**<br>
 │&emsp;├─ [0001、正则表达式语法.md](./2、通用知识点/0001、正则表达式语法.md)<br>
 ├─ **<span style="font-size: 24px">3、bash(.sh)</span>**<br>
@@ -55,4 +57,6 @@
 ├─ **<span style="font-size: 24px">9、其他</span>**<br>
 │&emsp;├─ **<span style="font-size: 22px">科目四</span>**<br>
 │&emsp;│&emsp;├─ [01、重点题目01.md](./9、其他/科目四/01、重点题目01.md)<br>
+│&emsp;│&emsp;├─ [02、重点题目02.md](./9、其他/科目四/02、重点题目02.md)<br>
+│&emsp;│&emsp;├─ [03、重点题目03.md](./9、其他/科目四/03、重点题目03.md)<br>
 ├─ [createContext.cpp](./createContext.cpp)<br>
