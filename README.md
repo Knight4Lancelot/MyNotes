@@ -38,6 +38,7 @@
 │&emsp;│&emsp;├─ [0005、const关键字.md](./5、C++/1、分散知识点/0005、const关键字.md)<br>
 │&emsp;│&emsp;├─ [0006、using.md](./5、C++/1、分散知识点/0006、using.md)<br>
 │&emsp;│&emsp;├─ [0007、正则表达式.md](./5、C++/1、分散知识点/0007、正则表达式.md)<br>
+│&emsp;│&emsp;├─ [0008、智能指针《待补充》.md](./5、C++/1、分散知识点/0008、智能指针《待补充》.md)<br>
 │&emsp;├─ **<span style="font-size: 22px">2、STL</span>**<br>
 │&emsp;│&emsp;├─ [0001、STL-stack.md](./5、C++/2、STL/0001、STL-stack.md)<br>
 │&emsp;│&emsp;├─ [0002、STL-queue.md](./5、C++/2、STL/0002、STL-queue.md)<br>
