@@ -8,6 +8,7 @@
 │&emsp;│&emsp;├─ [04、单例模式.md](./1、设计模式/1、24种设计模式/04、单例模式.md)<br>
 │&emsp;│&emsp;├─ [05、建造者模式.md](./1、设计模式/1、24种设计模式/05、建造者模式.md)<br>
 │&emsp;│&emsp;├─ [06、原型模式.md](./1、设计模式/1、24种设计模式/06、原型模式.md)<br>
+│&emsp;│&emsp;├─ [07、适配器模式.md](./1、设计模式/1、24种设计模式/07、适配器模式.md)<br>
 │&emsp;├─ **<span style="font-size: 22px">2、软件设计六大原则</span>**<br>
 │&emsp;│&emsp;├─ [0、六大软件设计原则.md](./1、设计模式/2、软件设计六大原则/0、六大软件设计原则.md)<br>
 │&emsp;│&emsp;├─ [1、单一职责原则.md](./1、设计模式/2、软件设计六大原则/1、单一职责原则.md)<br>
@@ -59,10 +60,4 @@
 ├─ **<span style="font-size: 24px">8、JavaScript</span>**<br>
 │&emsp;├─ [0001、对象检索key-value的方法.md](./8、JavaScript/0001、对象检索key-value的方法.md)<br>
 ├─ **<span style="font-size: 24px">9、其他</span>**<br>
-│&emsp;├─ **<span style="font-size: 22px">科目四</span>**<br>
-│&emsp;│&emsp;├─ [01、重点题目01.md](./9、其他/科目四/01、重点题目01.md)<br>
-│&emsp;│&emsp;├─ [02、重点题目02.md](./9、其他/科目四/02、重点题目02.md)<br>
-│&emsp;│&emsp;├─ [03、需求分析专题习题.md](./9、其他/科目四/03、需求分析专题习题.md)<br>
-│&emsp;│&emsp;├─ [04、软件建模专题习题.md](./9、其他/科目四/04、软件建模专题习题.md)<br>
-│&emsp;│&emsp;├─ [05、威胁分析建模专题习题.md](./9、其他/科目四/05、威胁分析建模专题习题.md)<br>
 ├─ [createContext.cpp](./createContext.cpp)<br>
