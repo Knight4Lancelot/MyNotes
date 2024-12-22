@@ -43,6 +43,11 @@
 │&emsp;│&emsp;├─ [0001、STL-stack.md](./5、C++/2、STL/0001、STL-stack.md)<br>
 │&emsp;│&emsp;├─ [0002、STL-queue.md](./5、C++/2、STL/0002、STL-queue.md)<br>
 │&emsp;│&emsp;├─ [0003、STL-vector.md](./5、C++/2、STL/0003、STL-vector.md)<br>
+│&emsp;│&emsp;├─ [0004、STL-map.md](./5、C++/2、STL/0004、STL-map.md)<br>
+│&emsp;│&emsp;├─ [0005、STL-deque.md](./5、C++/2、STL/0005、STL-deque.md)<br>
+│&emsp;│&emsp;├─ [0006、STL-unordered_map.md](./5、C++/2、STL/0006、STL-unordered_map.md)<br>
+│&emsp;│&emsp;├─ [0007、STL-set.md](./5、C++/2、STL/0007、STL-set.md)<br>
+│&emsp;│&emsp;├─ [0008、STL-unordered__set.md](./5、C++/2、STL/0008、STL-unordered__set.md)<br>
 │&emsp;├─ **<span style="font-size: 22px">3、类</span>**<br>
 │&emsp;│&emsp;├─ [0001、构造函数《待补充》.md](./5、C++/3、类/0001、构造函数《待补充》.md)<br>
 │&emsp;│&emsp;├─ [0002、拷贝构造函数《待补充》.md](./5、C++/3、类/0002、拷贝构造函数《待补充》.md)<br>
@@ -54,10 +59,12 @@
 │&emsp;│&emsp;├─ [0002、远程代码仓分支管理.md](./6、GIT/2、常用操作/0002、远程代码仓分支管理.md)<br>
 │&emsp;│&emsp;├─ [0003、git信息查询.md](./6、GIT/2、常用操作/0003、git信息查询.md)<br>
 │&emsp;│&emsp;├─ [0004、cherry-pick操作.md](./6、GIT/2、常用操作/0004、cherry-pick操作.md)<br>
+│&emsp;│&emsp;├─ [0005、合并两次提交《待补充》.md](./6、GIT/2、常用操作/0005、合并两次提交《待补充》.md)<br>
 ├─ **<span style="font-size: 24px">7、IDE设置</span>**<br>
 │&emsp;├─ **<span style="font-size: 22px">vscode</span>**<br>
 │&emsp;│&emsp;├─ [0001、设置默认打开文件的字符集.md](./7、IDE设置/vscode/0001、设置默认打开文件的字符集.md)<br>
 │&emsp;│&emsp;├─ [0002、设置IDE的页签换行显示.md](./7、IDE设置/vscode/0002、设置IDE的页签换行显示.md)<br>
 ├─ **<span style="font-size: 24px">8、JavaScript</span>**<br>
 │&emsp;├─ [0001、对象检索key-value的方法.md](./8、JavaScript/0001、对象检索key-value的方法.md)<br>
+├─ **<span style="font-size: 24px">9、其他</span>**<br>
 ├─ [createContext.cpp](./createContext.cpp)<br>
