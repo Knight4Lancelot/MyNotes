@@ -49,3 +49,19 @@ stack.size();
 ```C++
 stack.empty();
 ```
+
+# emplace
+
+在`stack`栈顶构造一个新元素。
+
+```C++
+stack.emplace(item);
+```
+
+# swap
+
+交换两个`stack`的内容。
+
+```C++
+stack1.swap(stack2); // 把stack1和stack2的内容交换
+```

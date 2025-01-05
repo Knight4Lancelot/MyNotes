@@ -53,3 +53,11 @@ size_t size = set_.size();
 ```C++
 set_.clear();
 ```
+
+# emplace
+
+向`unordered_set`中插入一个新元素。
+
+```C++
+set_.emplace(value);
+```

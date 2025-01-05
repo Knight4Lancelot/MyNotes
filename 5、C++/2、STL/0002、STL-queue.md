@@ -57,3 +57,19 @@ queue.front();
 ```C++
 queue.back();
 ```
+
+# emplace
+
+在`queue`队列尾部插入一个新元素。
+
+```C++
+queue.emplace(item);
+```
+
+# swap
+
+交换两个`queue`的内容。
+
+```C++
+queue1.swap(queue2); // 把queue1和queue2的内容交换
+```

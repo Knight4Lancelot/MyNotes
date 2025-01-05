@@ -73,3 +73,35 @@ deque_.size();
 ```C++
 deque_.empty();
 ```
+
+# emplace
+
+在`deque`指定位置构造一个新元素。
+
+```C++
+deque_.emplace(deque.begin() + 2, item);
+```
+
+# emplace_front
+
+在`deque`开头构造一个新元素。
+
+```C++
+deque_.emplace_front(item);
+```
+
+# emplace_back
+
+在`deque`末尾构造一个新元素。
+
+```C++
+deque_.emplace_back(item);
+```
+
+# swap
+
+交换两个`deque`的内容。
+
+```C++
+deque_.swap(newDeque_);
+```

@@ -100,3 +100,27 @@ vec.insert(vec.begin() + 2, 10);
 ```C++
 vec.resize(15);
 ```
+
+# emplace_back
+
+在`vector`的末尾构造一个元素。
+
+```C++
+vec.emplace_back(item);
+```
+
+# emplace
+
+在`vector`的指定位置构造一个元素。
+
+```C++
+vec.emplace(vec.begin() + 2, item);
+```
+
+# swap
+
+交换两个`vector`的内容。
+
+```C++
+vec1.swap(vec2);
+```

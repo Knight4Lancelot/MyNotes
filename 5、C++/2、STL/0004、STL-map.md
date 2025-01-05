@@ -55,3 +55,19 @@ map_.size();
 ```C++
 map_.empty();
 ```
+
+# emplace
+
+在`map`中插入一个新元素。
+
+```C++
+map_.emplace(key, value);
+```
+
+# swap
+
+交换两个`map`的内容。
+
+```C++
+map_.swap(other_map);
+```

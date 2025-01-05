@@ -10,7 +10,7 @@ STL容器 - set，集合容器，元素不可重复，且已经插入的元素�
 set<ValueType> set_;
 ```
 
-# 插入
+# insert
 
 向`set`中插入一个元素。
 
@@ -18,7 +18,7 @@ set<ValueType> set_;
 set_.insert(value);
 ```
 
-# 查找
+# find
 
 查找`set`中是否存在指定的元素。
 
@@ -30,7 +30,7 @@ if (set_.find(value) != set_.end()) {
 }
 ```
 
-# 删除
+# erase
 
 删除`set`中指定的元素。
 
@@ -38,7 +38,7 @@ if (set_.find(value) != set_.end()) {
 set_.erase(value);
 ```
 
-# 大小
+# size
 
 返回`set`中元素的数量。
 
@@ -46,10 +46,18 @@ set_.erase(value);
 size_t size = set_.size();
 ```
 
-# 清空
+# clear
 
 清空`set`中的所有元素。
 
 ```C++
 set_.clear();
+```
+
+# emplace
+
+向`set`中插入一个新元素。
+
+```C++
+set_.emplace(value);
 ```

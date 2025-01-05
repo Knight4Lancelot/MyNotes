@@ -61,3 +61,19 @@ size_t size = map_.size();
 ```C++
 map_.clear();
 ```
+
+# emplace
+
+在`unordered_map`中插入一个新的键值对。
+
+```C++
+map_.emplace(key, value);
+```
+
+# swap
+
+交换两个`unordered_map`的内容。
+
+```C++
+map_.swap(other_map);
+```
